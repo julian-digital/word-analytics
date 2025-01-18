@@ -1,4 +1,7 @@
-import { FACEBOOK_MAX_CHARACTERS, INSTAGRAM_MAX_CHARACTERS } from "./constants";
+import {
+  FACEBOOK_MAX_CHARACTERS,
+  INSTAGRAM_MAX_CHARACTERS,
+} from "../constants";
 export default function Stats(props) {
   const { text } = props;
   const wordsLength = text.split(/\s/).filter((word) => word !== "").length;
